@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Barra de navegación */
+.menu-bar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between; /* Para alinear los elementos a los extremos */
+  align-items: center; /* Para centrar verticalmente */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+/* Versión a la izquierda */
+.version {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+/* Reloj centrado */
+#clock {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1; /* Ocupa el espacio restante en el contenedor */
+}
+
+/* Botón hamburguesa alineado a la derecha */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  background: #333;
+  color: white;
+  text-align: center;
+  margin-right: 1em; /* Mover el ícono hacia la derecha */
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 6.4em;
+  right: 3.1em;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 200px;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: darkgreen;
+}
+
+/* Estilo para el cierre del menú (la X) */
+.close-menu {
+  position: absolute;
+  top:-1em;
+  right: 0em;
+  color:#333;
+  font-size: 30px;
+  cursor: pointer;
+  
+  
+}
+
+/* Asegura que el contenido debajo del menú no se superponga */
+body {
+  padding-top: 60px; /* Ajustar según la altura del menú */
+}
